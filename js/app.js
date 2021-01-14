@@ -8,8 +8,6 @@ alert('Hello ' + userName + '.');
 var que1 = prompt('Am I a Code Fellows student?') .toLowerCase();
 //var normalizedQue1 = que1.toLowerCase();
 
-//function anythingElse ('That\'s not a yes or no answer') {}
-
 if(que1 === 'yes' || que1 === 'y') {
   //console.log('Yes, I am a Code Fellows student.');
   alert('That\'s right.');
@@ -47,7 +45,7 @@ if(que4 === 'no' || que4 === 'n') {
   //console.log('I was in the Navy.');
   alert('True, I was in the Navy.');
 } else if (que4 === 'yes' || que4 === 'y') {
-  alert('Wrong, born in 1987');
+  alert('I was in the Navy');
 } else {
   alert('That\'s not a yes or no answer');
 }
