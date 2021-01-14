@@ -33,15 +33,19 @@ p {
 }
 
 ul {
+    list-style: disc;
     color:white;
     padding-top: 30px;
     font-size: 20px;
+    margin:50px;
 }
 
 ol {
+    list-style: disc;
     color:white;
     padding-top: 30px;
     font-size: 20px;
+    margin:50px;
 }
 
 footer {
