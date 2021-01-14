@@ -5,7 +5,7 @@ console.log('hello world');
 var userName = prompt('Welcome, what is your name?');
 alert('Hello ' + userName + '.');
 
-var responseOne = prompt('Am I a Code Fellows student?') .toLowerCase();
+var responseOne = prompt('Am I a Code Fellows student?').toLowerCase();
 //var normalizedQue1 = que1.toLowerCase();
 
 if(responseOne === 'yes' || responseOne === 'y') {
@@ -17,7 +17,7 @@ if(responseOne === 'yes' || responseOne === 'y') {
   alert('That\'s not a yes or no answer');
 }
 
-var responseTwo = prompt('Do I own a cat?') .toLowerCase();
+var responseTwo = prompt('Do I own a cat?').toLowerCase();
 
 if(responseTwo === 'yes' || responseTwo === 'y') {
   //console.log('I own 0 cats and 1 dog.);
@@ -28,7 +28,7 @@ if(responseTwo === 'yes' || responseTwo === 'y') {
   alert('That\'s not a yes or no answer');
 }
 
-var responseThree = prompt('Am I over 30?') .toLowerCase();
+var responseThree = prompt('Am I over 30?').toLowerCase();
 
 if(responseThree === 'yes' || responseThree === 'y') {
   //console.log('That\'s right.');
@@ -39,7 +39,7 @@ if(responseThree === 'yes' || responseThree === 'y') {
   alert('That\'s not a yes or no answer');
 }
 
-var responseFour = prompt('Was I in the Army?') .toLowerCase();
+var responseFour = prompt('Was I in the Army?').toLowerCase();
 
 if(responseFour === 'no' || responseFour === 'n') {
   //console.log('I was in the Navy.');
@@ -50,7 +50,7 @@ if(responseFour === 'no' || responseFour === 'n') {
   alert('That\'s not a yes or no answer');
 }
 
-var responseFive = prompt('Am I gonna pass this class?') .toLowerCase();
+var responseFive = prompt('Am I gonna pass this class?').toLowerCase();
 
 if(responseFive === 'yes' || responseFive === 'y') {
   //console.log('I will pass!');
