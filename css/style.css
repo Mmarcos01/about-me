@@ -42,6 +42,7 @@ ul {
     color:white;
     font-size: 20px;
     margin:50px;
+    line-height:150%;
 }
 
 ol {
@@ -50,9 +51,14 @@ ol {
     color:white;
     font-size: 20px;
     margin:50px;
+    line-height:150%;
 }
 
 footer {
     color:turquoise;
     bottom: 0;
+}
+
+.orderedList {
+    list-style-type: upper-alpha;
 }
