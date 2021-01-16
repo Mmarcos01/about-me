@@ -60,3 +60,36 @@ if(responseFive === 'yes' || responseFive === 'y') {
 } else {
   alert('That\'s not a yes or no answer. ' + userName);
 }
+
+
+var count = 4;
+var myNumber = 7;
+
+
+for (var i = 0; i < count; i++) {
+  var responseSix = parseInt(prompt('What number am I thinking?'));
+  if (responseSix === myNumber) {
+    alert('Correct.');
+    break;
+  }else if (responseSix < myNumber){
+    alert('Too low.');
+  }else if (responseSix > myNumber){
+    alert('Too high.');
+  }
+  if (i === count-1){
+    alert(`The correct answer is ${myNumber}.`);
+  }
+}
+  
+//  var maxGuess = 4;
+//  var rightNumber = 7;
+//  var guess = false;
+ 
+//   while (maxGuess && !guess){
+//     var ourGuess = getRandom();
+//     alert('guess again')
+//     maxGuess--;
+//     if (ourGuess === rightNumber) {
+//     var guess = true;
+//     }
+

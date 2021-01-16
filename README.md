@@ -1,8 +1,7 @@
 # LAB - 02
 
 ## About Me
-
-I built an app with a direct and powerful purpose. My app does all of the things that it accomplishes well. Here  I describe the purpose and functionality so those that visit my README understand the app.
+This is webpage dedicated to further my learning of HTML, CSS, and Javascript. At the same time it allows users to get to know me better.
 
 ### Author: Marie Marcos
 
@@ -11,5 +10,7 @@ I built an app with a direct and powerful purpose. My app does all of the things
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 
 ### Reflections and Comments
+
+
 * Consider including the answers to your daily journal and submission questions here
 * This is also a good place to reflect on the tools and resources used and learned
