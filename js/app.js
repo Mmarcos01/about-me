@@ -80,8 +80,11 @@ for (var i = 0; i < count; i++) {
     alert(`The correct answer is ${myNumber}.`);
   }
 }
-  
 
+var myFavoriteColors = ['blue', 'green', 'purple'];
+
+for (var i = 0;)
+var responseSeven = prompt('What are my favorite colors?').toLowerCase();
 
 
 
