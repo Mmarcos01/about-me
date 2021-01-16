@@ -60,5 +60,5 @@ footer {
 }
 
 .orderedList {
-    list-style-type: upper-alpha;
+    list-style-type: decimal;
 }
