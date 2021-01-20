@@ -8,7 +8,6 @@ var userName = prompt('Welcome, what is your name?');
 alert('Hello ' + userName + '.');
 
 var responseOne = prompt('Am I a Code Fellows student?').toLowerCase();
-//var normalizedQue1 = que1.toLowerCase();
 
 if(responseOne === 'yes' || responseOne === 'y') {
   //console.log('Yes, I am a Code Fellows student.');
