@@ -14,3 +14,4 @@ Today I strengthened my knowledge about html and the use of boxes. I can see mor
 
 <!-- * Consider including the answers to your daily journal and submission questions here
 * This is also a good place to reflect on the tools and resources used and learned -->
+

@@ -103,7 +103,7 @@ for (i = 0; i < countTwo; i++) { //set variable to 0; when variable is less than
       rightAnswer = true; //righAnswer is true or !false (not false)
     }
   }
-  if (rightAnswer){
+  if (rightAnswer){ //at this moment rightAnswer has a true value as assigned on line 103
     break; //if it is the right answer break the code
   }
 
