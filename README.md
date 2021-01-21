@@ -3,7 +3,8 @@
 ## About Me
 This is webpage dedicated to further my learning of HTML, CSS, and Javascript. At the same time it allows users to get to know me better.
 
-### Author: Marie Marcos
+### Author: Marie Marcos - Navigator; Wenhao Piao - Driver
+In lab-04, we refactor the base code of lab-03, we moved the logic for all questions into functions.
 
 ### Links and Resources
 * [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
