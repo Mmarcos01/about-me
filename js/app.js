@@ -7,86 +7,127 @@ var score = 0;
 var userName = prompt('Welcome, what is your name?');
 alert('Hello ' + userName + '.');
 
-function questionOne() {
-  var responseOne = prompt('Am I a Code Fellows student?').toLowerCase();
-  //var normalizedQue1 = que1.toLowerCase();
+var questions = [
+  'Am I a Code Fellows student?',
+  'Do I own a cat?',
+  'Am I over 30?',
+  'Was I in the Army?',
+  'Am I gonna pass this class?',
+];
 
-  if (responseOne === 'yes' || responseOne === 'y') {
-    //console.log('Yes, I am a Code Fellows student.');
-    score++;
-    alert('That\'s right.');
-  } else if (responseOne === 'no' || responseOne === 'n') {
-    alert('I feel like you should know the right answer to this...');
-  } else {
-    alert('That\'s not a yes or no answer');
+var answers = [
+  ['yes', 'y', 'no','n'],
+  ['yes', 'y', 'no','n'],
+  ['yes', 'y', 'no','n'],
+  ['no', 'n', 'yes', 'y'],
+  ['yes', 'y', 'no','n'],
+];
+
+var myStatement = [
+  ['That\'s right.','I feel like you should know the right answer to this...','That\'s not a yes or no answer'],
+  ['Nope, I have a 3 year old pitbull/husky (pitsky) named Chai', 'Correct, but I do have a 3 year old pitbull/husky (pitsky) named Chai', 'That\'s not a yes or no answer'],
+  ['I am 34.', 'Wrong, I was born in 1987', 'That\'s not a yes or no answer'],
+  ['True, I was in the Navy.', 'I was in the Navy', 'That\'s not a yes or no answer'],
+  ['Thanks for believing in me, ' + userName + '!', 'Seriously?! ' + userName, 'That\'s not a yes or no answer, ' + userName + '.'],
+];
+
+function questionOneToFive() {
+  for (var i = 0; i < questions.length; i++) {
+    var response = prompt(questions[i]).toLowerCase();
+  
+    if (response === answers[i][0] || response === answers[i][1]) {
+      score++;
+      alert(myStatement[i][0]);
+    } else if (response === answers[i][2] || response === answers[i][3]) {
+      alert(myStatement[i][1]);
+    } else {
+      alert(myStatement[i][2]);
+    }
   }
 }
 
-questionOne();
+questionOneToFive();
 
-function questionTwo() {
-  var responseTwo = prompt('Do I own a cat?').toLowerCase();
+// function questionOne() {
+//   var responseOne = prompt('Am I a Code Fellows student?').toLowerCase();
+//   //var normalizedQue1 = que1.toLowerCase();
 
-  if (responseTwo === 'yes' || responseTwo === 'y') {
-    //console.log('I own 0 cats and 1 dog.);
-    alert('Nope, I have a 3 year old pitbull/husky (pitsky) named Chai');
-  } else if (responseTwo === 'no' || responseTwo === 'n') {
-    score++;
-    alert('Correct, but I do have a 3 year old pitbull/husky (pitsky) named Chai');
-  } else {
-    alert('That\'s not a yes or no answer');
-  }
-}
+//   if (responseOne === 'yes' || responseOne === 'y') {
+//     //console.log('Yes, I am a Code Fellows student.');
+//     score++;
+//     alert('That\'s right.');
+//   } else if (responseOne === 'no' || responseOne === 'n') {
+//     alert('I feel like you should know the right answer to this...');
+//   } else {
+//     alert('That\'s not a yes or no answer');
+//   }
+// }
 
-questionTwo();
+// questionOne();
 
-function questionThree() {
-  var responseThree = prompt('Am I over 30?').toLowerCase();
+// function questionTwo() {
+//   var responseTwo = prompt('Do I own a cat?').toLowerCase();
 
-  if (responseThree === 'yes' || responseThree === 'y') {
-    //console.log('That\'s right.');
-    score++;
-    alert('I am 34.');
-  } else if (responseThree === 'no' || responseThree === 'n') {
-    alert('Wrong, I was born in 1987');
-  } else {
-    alert('That\'s not a yes or no answer');
-  }
-}
+//   if (responseTwo === 'yes' || responseTwo === 'y') {
+//     //console.log('I own 0 cats and 1 dog.);
+//     alert('Nope, I have a 3 year old pitbull/husky (pitsky) named Chai');
+//   } else if (responseTwo === 'no' || responseTwo === 'n') {
+//     score++;
+//     alert('Correct, but I do have a 3 year old pitbull/husky (pitsky) named Chai');
+//   } else {
+//     alert('That\'s not a yes or no answer');
+//   }
+// }
 
-questionThree();
+// questionTwo();
 
-function questionFour() {
-  var responseFour = prompt('Was I in the Army?').toLowerCase();
+// function questionThree() {
+//   var responseThree = prompt('Am I over 30?').toLowerCase();
 
-  if (responseFour === 'no' || responseFour === 'n') {
-    //console.log('I was in the Navy.');
-    score++;
-    alert('True, I was in the Navy.');
-  } else if (responseFour === 'yes' || responseFour === 'y') {
-    alert('I was in the Navy');
-  } else {
-    alert('That\'s not a yes or no answer');
-  }
-}
+//   if (responseThree === 'yes' || responseThree === 'y') {
+//     //console.log('That\'s right.');
+//     score++;
+//     alert('I am 34.');
+//   } else if (responseThree === 'no' || responseThree === 'n') {
+//     alert('Wrong, I was born in 1987');
+//   } else {
+//     alert('That\'s not a yes or no answer');
+//   }
+// }
 
-questionFour();
+// questionThree();
 
-function questionFive() {
-  var responseFive = prompt('Am I gonna pass this class?').toLowerCase();
+// function questionFour() {
+//   var responseFour = prompt('Was I in the Army?').toLowerCase();
 
-  if (responseFive === 'yes' || responseFive === 'y') {
-    //console.log('I will pass!');
-    score++;
-    alert('Thanks for believing in me, ' + userName + '!');
-  } else if (responseFive === 'no' || responseFive === 'n') {
-    alert('Seriously?! ' + userName);
-  } else {
-    alert('That\'s not a yes or no answer, ' + userName + '.');
-  }
-}
+//   if (responseFour === 'no' || responseFour === 'n') {
+//     //console.log('I was in the Navy.');
+//     score++;
+//     alert('True, I was in the Navy.');
+//   } else if (responseFour === 'yes' || responseFour === 'y') {
+//     alert('I was in the Navy');
+//   } else {
+//     alert('That\'s not a yes or no answer');
+//   }
+// }
 
-questionFive();
+// questionFour();
+
+// function questionFive() {
+//   var responseFive = prompt('Am I gonna pass this class?').toLowerCase();
+
+//   if (responseFive === 'yes' || responseFive === 'y') {
+//     //console.log('I will pass!');
+//     score++;
+//     alert('Thanks for believing in me, ' + userName + '!');
+//   } else if (responseFive === 'no' || responseFive === 'n') {
+//     alert('Seriously?! ' + userName);
+//   } else {
+//     alert('That\'s not a yes or no answer, ' + userName + '.');
+//   }
+// }
+
+// questionFive();
 
 function questionSix() {
   var count = 4;
